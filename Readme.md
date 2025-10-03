@@ -235,3 +235,7 @@ Switching is done due to a button in the login page to controll UI elements and 
 ## AI tools used for development 
 - Github copilot : AI assistant used for coding integrated in **vscode** environment
 - Chatgpt : To improve productivity and simplify complex UI designs 
+
+## Notes
+- Note that the models used have rate limiting so they might not comply with mush interactions
+- The application is deployed on Azure vm due to limited credits for resources (For production use : Kubernetes and CI/CD to improve deployment process and application lifecycle)
