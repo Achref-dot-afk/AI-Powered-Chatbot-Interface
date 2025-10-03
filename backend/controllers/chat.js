@@ -12,9 +12,9 @@ const openRouterAPI = axios.create({
 });
 
 const MODEL_MAPPING = {
-  "model-1" : "x-ai/grok-4-fast:free",
-  "model-2" : "mistralai/mistral-small-3.2-24b-instruct:free",
-  "model-3" : "x-ai/grok-4-turbo:free",
+  "model-1" : "mistralai/mistral-small-3.2-24b-instruct:free",
+  "model-2" : "deepseek/deepseek-chat-v3.1:free",
+  "model-3" : "meituan/longcat-flash-chat:free",
 }
 
 // Get user language from DB
@@ -58,7 +58,7 @@ const translateText = async (text, targetLang, modelId) => {
 
   try {
     const response = await openRouterAPI.post("/chat/completions", {
-      model: MODEL_MAPPING[modelId] || "x-ai/grok-4-fast:free",
+      model: MODEL_MAPPING[modelId] || "mistralai/mistral-small-3.2-24b-instruct:free",
       messages: [{ role: "user", content: prompt }],
       max_tokens: 1000,
     });
@@ -101,7 +101,7 @@ Use ${
 
   try {
     const response = await openRouterAPI.post("/chat/completions", {
-      model: MODEL_MAPPING[modelId] || "x-ai/grok-4-fast:free",
+      model: MODEL_MAPPING[modelId] || "mistralai/mistral-small-3.2-24b-instruct:free",
       messages: [{ role: "user", content: prompt }],
       max_tokens: 500,
     });
@@ -169,7 +169,7 @@ module.exports = {
 
       // Send to AI
       const response = await openRouterAPI.post("/chat/completions", {
-        model: MODEL_MAPPING[modelId] || "x-ai/grok-4-fast:free",
+        model: MODEL_MAPPING[modelId] || "mistralai/mistral-small-3.2-24b-instruct:free",
         messages: [
           { role: "system", content: "You are a helpful assistant." },
           { role: "user", content: aiPrompt },

@@ -32,9 +32,9 @@ const translations = {
 
 // Define available models - you can modify these later
 const AVAILABLE_MODELS = [
-  { id: 'model-1', name: 'x-ai/grok-4-fast:free', description: 'Most capable model' },
-  { id: 'model-2', name: 'mistralai/mistral-small-3.2-24b-instruct:free', description: 'Balanced performance' },
-  { id: 'model-3', name: 'x-ai/grok-4-turbo:free', description: 'Fast and efficient' },
+  { id: 'model-1', name: 'mistralai/mistral-small-3.2-24b-instruct:free', description: 'Balanced performance' },
+  { id: 'model-2', name: 'deepseek/deepseek-chat-v3.1:free', description: 'Fast and efficient' },
+  { id: 'model-3', name: 'meituan/longcat-flash-chat:free', description: 'Most capable model' },
 ];
 
 // Custom Markdown components for better styling
