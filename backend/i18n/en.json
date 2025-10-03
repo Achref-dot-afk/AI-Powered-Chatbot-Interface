@@ -1,0 +1,26 @@
+{
+  "errors": {
+    "missingConversationId": "conversationId is required.",
+    "conversationNotFound": "Conversation not found.",
+    "unauthorized": "You must be logged in to access this resource.",
+    "dbError": "A database error occurred.",
+    "missingMessage": "Message is required.",
+    "serverError": "An internal server error occurred."
+  },
+  "chat": {
+    "welcome": "Welcome! How can I help you today?",
+    "fallback": "Sorry, I didn’t understand that.",
+    "aiError": "There was an error communicating with the AI service.",
+    "userNotFound": "User not found."
+  },
+  "auth": {
+    "missingFields": "Email, password, and language are required.",
+    "invalidLanguage": "Language must be 'en' or 'ar'.",
+    "userExists": "User already exists.",
+    "dbError": "A database error occurred while processing your request.",
+    "invalidCredentials": "Invalid credentials. Please check your email or password.",
+    "missingCredentials": "Email and password are required.",
+    "serverError": "An internal server error occurred. Please try again later.",
+    "logoutSuccess": "Sign out successful (client should delete token)."
+  }
+}
