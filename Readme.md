@@ -187,25 +187,30 @@ For the frontend we statically changed the components of UI elements(buttons, fo
       }
     }
   };
-  
+
 ```
 
 Switching is done due to a button in the login page to controll UI elements and another button in the chat page to control chat language and user preference.
 
 ## Usage Guide 
+
+- Environment : (Environment variables that need to be set before starting the project)
+    - **PORT** : Backend port (If not provided it will be set to 5000)
+    - **JWT_SECRET** : Secret to use for JWT
+    - **OPENROUTER_API_KEY** : Api key to run openrouter's models
 1. Acess the application :
 - Through the link "mydomain.com"
-2 - Create an account : 
+2. Create an account : 
 - You will encounter first the landing page -> Click **get started** button to go to login page
 - Provide:
     - Email
     - Password
     - Preferred Language (currently supported: English en, Arabic ar).
     - Submit the form to create your account
-3- Log in :
+3. Log in :
 - Use your credentials to log in
 - If successful, you will be redirected automatically to the **Chat page**
-4- Start a new conversation :
+4. Start a new conversation :
 - Click ➕ New Chat in the sidebar to start a new conversation
 - Type your message in the input box and press Enter or click Send
 - The assistant will reply in the same language you selected during signup (you can switch later in settings)
@@ -215,16 +220,16 @@ Switching is done due to a button in the login page to controll UI elements and 
 - Click a conversation to open it and see its chat history
 - You can add new messages to it 
 - You can search to filter old conversations
-6- Change language : 
+6. Change language : 
 - Click the language switch in the sidebar to change language of AI responses, later the conversations will be translated with their summaries
 - Instant update to AI new responses
-7- Change AI model : 
+7. Change AI model : 
 - Three models were used and user can switch by clicking the model button which is set by default to **x-ai/grok-4-fast:free** and the response will be based on that model selected
 - Models used in this demo (x-ai/grok-4-fast:free,mistralai/mistral-small-3.2-24b-instruct:free,x-ai/grok-4-turbo:free)
 - They support both languages we used in this implementation
-8- Download conversation : 
+8. Download conversation : 
 - User can download a conversation into **PDF** file by clicking the button **Download PDF**
-9- Log out : 
+9. Log out : 
 - User can logout and its JWT token will be removed after he press the logout button on the bottom right and he will be redirected to the Home landing page
 
 ## AI tools used for development 
