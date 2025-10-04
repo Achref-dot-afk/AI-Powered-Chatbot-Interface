@@ -224,8 +224,8 @@ Switching is done due to a button in the login page to controll UI elements and 
 - Click the language switch in the sidebar to change language of AI responses, later the conversations will be translated with their summaries
 - Instant update to AI new responses
 7. Change AI model : 
-- Three models were used and user can switch by clicking the model button which is set by default to **x-ai/grok-4-fast:free** and the response will be based on that model selected
-- Models used in this demo (x-ai/grok-4-fast:free,mistralai/mistral-small-3.2-24b-instruct:free,x-ai/grok-4-turbo:free)
+- Three models were used and user can switch by clicking the model button which is set by default to **mistral-small-3.2-24b-instruct:free,x-ai** and the response will be based on that model selected
+- Models used in this demo (deepseek/deepseek-chat-v3.1:free/mistral-small-3.2-24b-instruct:free,x-ai/meituan/longcat-flash-chat:free)
 - They support both languages we used in this implementation
 8. Download conversation : 
 - User can download a conversation into **PDF** file by clicking the button **Download PDF**
